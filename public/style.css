@@ -1,0 +1,54 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e6e9f0 0%, #eef1f5 100%);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #0366d6;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-image: linear-gradient(45deg, #007bff, #6699FF);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px; /* Más redondeado */
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1); /* Sombra más profunda */
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    background-image: linear-gradient(45deg, #0056b3, #337ab7);
+    box-shadow: 0 12px 22px rgba(0,0,0,0.2); /* Sombra más intensa al pasar el mouse */
+  }
+  
+  #counter {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #555;
+    background-color: #f0f0f0; /* Color de fondo más claro */
+    border-radius: 15px; /* Bordes más suaves */
+    display: inline-block;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra sutil */
+  }
+  
+  /* Adaptaciones para pantallas pequeñas */
+  @media (max-width: 600px) {
+    body, button {
+      padding: 10px;
+    }
+  
+    button {
+      width: 100%; /* Ajuste para pantallas pequeñas */
+      padding: 10px;
+    }
+  }  
