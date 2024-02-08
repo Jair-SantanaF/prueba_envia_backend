@@ -10,19 +10,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.generateGuide = void 0;
-const app_1 = require("../app");
 const api_1 = require("../utils/api");
 const generateGuide = (guideData) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const response = yield (0, api_1.generateGuideApiCall)(guideData);
-        if (response.status === 200 && response.data.meta != "error") {
-            console.log('Guía generada exitosamente:', response.data);
-            app_1.io.emit('updateCounter', { counter: 1 });
-        }
-        else {
-            console.error('Error al generar la guía:', response.data);
-            app_1.io.emit('updateCounter', { counter: 0 });
-        }
+        return response;
     }
     catch (error) {
         console.error('Error al generar la guía:', error);
